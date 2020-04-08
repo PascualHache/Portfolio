@@ -1,0 +1,64 @@
+.bowl {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    /* background-image: radial-gradient(circle at 50% 2.95%, #ffffff 0, #dcffff 25%, #ade1eb 50%, #7dc3d4 75%, #54abc4 100%); */
+}
+
+.bowl .inner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bowl .fill {
+    -webkit-animation-name: fillAction;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.bowl .waveShape {
+    position: absolute;
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 1.5s;
+    width: 300px;
+    height: 150px;
+}
+
+.bowl #front {
+    fill: #88d4f7;
+    opacity: 0.9;
+    /* background-image: radial-gradient(circle at 50% 2.95%, #ffffff 0, #dcffff 25%, #ade1eb 50%, #7dc3d4 75%, #54abc4 100%); */
+}
+
+.bowl #back {
+    -webkit-animation-delay: calc(1.5s/2);
+    fill: #8186af;
+    opacity: 0.5;
+}
+
+@-webkit-keyframes fillAction {
+    0% {
+        -webkit-transform: translate(0, 100vh);
+    }
+    100% {
+        -webkit-transform: translate(-100, 100px);
+    }
+}
+
+@-webkit-keyframes waveAction {
+    0% {
+        -webkit-transform: translate(-150px, 0);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}

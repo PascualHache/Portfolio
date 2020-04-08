@@ -1,0 +1,37 @@
+ul {
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    float: none;
+}
+
+a {
+    font-size: 1.2em;
+}
+
+.link-1 {
+    transition: 0.3s ease;
+    /* background: #3fa46a; */
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    /* border-top: 4px solid #3fa46a; */
+    /* border-bottom: 4px solid #3fa46a; */
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+.link-1:hover {
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    padding: 6px 0;
+}
+
+nav {
+    background-color: #b3cbdd;
+    padding: 12px;
+}

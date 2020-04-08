@@ -13,6 +13,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -25,47 +26,59 @@ html {
 /*Global styles*/
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto';
+    /* font-family: 'Open Sans', sans-serif; */
     margin: 0;
     /* elimina el margen blanco del borde*/
 }
 
 h1,
 h2 {
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Raleway';
 }
 
 h1 {
-    font-size: 80px;
-}
-
-h2 {
     font-size: 40px;
-    margin-top: 0;
 }
 
-.education {
-    background: #8D99AE;
+.content-wrap-title h2 {
+    /* color: #ffffff; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    /* line-height: 72px; */
+    margin: 0 0 24px;
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Raleway';
+}
+
+.col-narrow h3 {
+    font-size: 1.5em;
+}
+
+.education,
+.contact {
+    background: #b3cbdd;
 }
 
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 10px 20px 20px 50px;
     overflow: hidden;
 }
 
-.col-narrow {
-    width: 30%;
-    float: left;
-    min-height: 175px;
-}
-
-.col-wide {
-    width: 70%;
-    float: left;
-    padding-left: 20px;
-    min-height: 175px;
+.content-wrap-title {
+    max-width: 950px;
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-top: 25px;
+    overflow: hidden;
 }
 
 
@@ -82,16 +95,13 @@ footer {
 
 .profile-img {
     border-radius: 50%;
+    /* width: 80%; */
 }
 
 header h1,
 header h2 {
     color: #EDF2F4;
     margin: 0;
-}
-
-nav {
-    background-color: #b3cbdd;
 }
 
 
@@ -103,4 +113,17 @@ footer {
 
 .contact-info a {
     margin: 10px;
+}
+
+.col-narrow {
+    width: 30%;
+    float: left;
+    min-height: 155px;
+}
+
+.col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 155px;
 }

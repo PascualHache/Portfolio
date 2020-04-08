@@ -1,3 +1,31 @@
 <div class="contact" id="Contact">
-    <p>Aquí va una form</p>
+    <div class="content-wrap-title">
+        <h2>Contact</h2>
+    </div>
+    <div class="content-wrap">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm.value)">
+            <div class="row">
+                <label for="name">Name</label>
+                <input id="text" type="text" name="name" ngModel/>
+            </div>
+
+            <div class="row">
+                <label for="email">Email</label>
+                <input id="text" type="text" name="email" ngModel/>
+            </div>
+
+            <div class="row">
+                <label for="name">Company</label>
+                <input id="text" type="text" name="company" ngModel/>
+            </div>
+
+            <div class="row">
+                <label for="email">Message</label>
+                <textarea class="form-control" id="text-email" rows="7" ngModel></textarea>
+                <!-- <input id="text-email" type="text" name="mensaje" ngModel/> -->
+            </div>
+            <!-- <button type="submit">Send</button> -->
+            <label><span> </span><input class="formbtn" type="submit" value="Submit" /></label>
+        </form>
+    </div>
 </div>
