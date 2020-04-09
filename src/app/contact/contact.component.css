@@ -1,18 +1,23 @@
 form .row #text {
     float: none;
     display: block;
+    border: none;
     text-align: left;
     width: 100%;
     margin: 0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
 }
 
-form .row #text-email {
+
+/* form .row #text-email {
     float: none;
     display: block;
     text-align: left;
     width: 100%;
     margin: 0;
-}
+} */
 
 .formbtn {
     border: none;
@@ -20,10 +25,18 @@ form .row #text-email {
     padding: 8px 15px 8px 15px;
     background: #2B2D42;
     color: #fff;
+    float: right;
     /* box-shadow: 1px 1px 4px #DADADA;
     -moz-box-shadow: 1px 1px 4px #DADADA;
     -webkit-box-shadow: 1px 1px 4px #DADADA; */
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+}
+
+label {
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: -3px;
 }

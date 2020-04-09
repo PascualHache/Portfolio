@@ -14,9 +14,9 @@ a {
 }
 
 .link-1 {
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     /* background: #3fa46a; */
-    color: #ffffff;
+    color: #5942E6;
     font-size: 20px;
     text-decoration: none;
     /* border-top: 4px solid #3fa46a; */
@@ -26,12 +26,12 @@ a {
 }
 
 .link-1:hover {
-    border-top: 4px solid #ffffff;
-    border-bottom: 4px solid #ffffff;
+    border-top: 2px solid #5942E6;
+    border-bottom: 2px solid #5942E6;
     padding: 6px 0;
 }
 
 nav {
-    background-color: #b3cbdd;
+    background-color: #C2EABA;
     padding: 12px;
 }

@@ -53,6 +53,13 @@ h1 {
     text-transform: uppercase;
 }
 
+.content-wrap-header {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px 20px 50px 50px;
+    overflow: hidden;
+}
+
 h3 {
     font-family: 'Raleway';
 }
@@ -63,7 +70,12 @@ h3 {
 
 .education,
 .contact {
-    background: #b3cbdd;
+    background: #D1E0C3;
+}
+
+.work,
+.projects {
+    background: #E6EFE9;
 }
 
 .content-wrap {
@@ -81,13 +93,30 @@ h3 {
     overflow: hidden;
 }
 
+.content-wrap-form {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 10px 20px 20px 50px;
+    overflow: hidden;
+    /* text-align: center; */
+}
+
+form {
+    margin: 0 auto;
+    width: 90%;
+}
+
 
 /*Header and Footer*/
 
 header,
 footer {
-    background: #2B2D42;
-    color: #8D99AE;
+    background: #5942E6;
+    color: #E6EFE9;
+}
+
+footer a {
+    color: #E6EFE9;
 }
 
 
@@ -100,7 +129,7 @@ footer {
 
 header h1,
 header h2 {
-    color: #EDF2F4;
+    color: #E6EFE9;
     margin: 0;
 }
 
