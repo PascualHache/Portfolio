@@ -3,7 +3,36 @@
         <h2>Contact</h2>
     </div>
     <div class="content-wrap-form">
-        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm.value)">
+        <div [hidden]="submitted">
+            <form #portfolioForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
+                </div>
+                <div [hidden]="name.valid || name.untouched" class="alert alert-danger">Name is required</div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" required [(ngModel)]="model.email" name="email" #email="ngModel">
+                    <div [hidden]="email.valid || email.untouched" class="alert alert-danger">Email is required</div>
+                    <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" -->
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" class="form-control" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="text-message" rows="7" required [(ngModel)]="model.message" name="message" #message="ngModel"></textarea >
+                </div>
+                <div [hidden]="message.valid || message.untouched" class="alert alert-danger">Message is required</div>
+                <button type="submit" [disabled]="!portfolioForm.form.valid" class="btn btn-success">Send</button>
+            </form>
+        </div>
+        <div [hidden]="!submitted">
+            Thanks for contact me. I will answer you soon!
+        </div>
+        <!-- <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm.value)">
             <div class="row">
                 <label for="name">Name</label>
             </div>
@@ -27,12 +56,10 @@
             </div>
             <div class="row">
                 <textarea class="form-control" id="text-email" rows="7" ngModel></textarea>
-                <!-- <input id="text-email" type="text" name="mensaje" ngModel/> -->
+
+                    <div class="row">
+                        <label><span> </span><input class="formbtn" type="submit" value="Submit" /></label>
+                    </div>
+            </form> -->
             </div>
-            <!-- <button type="submit">Send</button> -->
-            <div class="row">
-                <label><span> </span><input class="formbtn" type="submit" value="Submit" /></label>
-            </div>
-        </form>
-    </div>
-</div>
+        </div>

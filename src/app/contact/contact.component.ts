@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Validation } from './validation';
 
 @Component({
   selector: 'app-contact',
@@ -7,12 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    
+  }
+  model = new Validation("","","","")
 
   ngOnInit(): void {
-  }
-  onSubmit(contactForm) {
-    console.log(contactForm);
+    
   }
 
+  submitted = false;
+
+  onSubmit() {
+    this.submitted=true;
+    console.log("name: "+this.model.name);
+    console.log("email: "+this.model.email);
+    console.log("message: "+this.model.name);
+  }
+
+ 
+  
 }

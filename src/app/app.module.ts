@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { WaterComponent } from './water/water.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,7 @@ import { WaterComponent } from './water/water.component';
     EducationComponent,
     MenuComponent,
     ProjectsComponent,
-    WaterComponent
+    WaterComponent  
   ],
   imports: [
     BrowserModule,
